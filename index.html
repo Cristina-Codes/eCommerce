@@ -5,6 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Toybox Homepage</title>
+<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/207bdf71a3.js" crossorigin="anonymous"></script>
+
+<!-- stylesheet -->
+	
 </head>
 <body>
   <div class="announcements">
@@ -13,7 +18,7 @@
     </div>
 	</div>
 
-	<nav class="navBar">
+	<nav class="navBar" id="topNav">
     <div class="wrapper">
 			<input type="checkbox" id="openSidebarMenu">
 			<label for="openSidebarMenu">
@@ -82,7 +87,7 @@
 	<footer id="footer">
     <div class="wrapper">
 			<div class="footerFlexContainer">
-				<a href="" class="logo">
+				<a href="#topNav" class="logo">
 					<h4>Toybox</h4>
 				</a>
 
@@ -129,6 +134,8 @@
 					<a href="">
 						<i class="fab fa-twitter" aria-hidden="true"></i>
 						<span class="sr-only">Link to Twitter</span>
+		<!-- aria-hidden="true" to hide icon from screenreaders -->
+		<!-- the span within the link in sr-only for screenreaders -->
 					</a>
 					<a href="">
 						<i class="fab fa-pinterest" aria-hidden="true"></i>
