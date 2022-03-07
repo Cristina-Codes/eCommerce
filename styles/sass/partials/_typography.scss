@@ -1,0 +1,24 @@
+/* import Jakarta Sans font in normal/regular */
+@font-face {
+  font-family: "Jakarta Sans"; //naming the font-family. it can be any name, but stay logical
+  src: url("../../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"),
+  url("../../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2"),
+  url("../../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf");
+// there are 3 urls to have backup fonts, similar to a font stack in font-families
+  font-weight: normal;
+}
+
+/* import Jakarta Sans font in bold */
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url('../../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff'),
+  url("../../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2"),
+  url("../../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf");
+  font-weight: bold;
+}
+
+/* import Young Serif font */
+@font-face {
+  font-family: "Young Serif";
+  src: url('../../fonts/youngserif/YoungSerif-Regular.otf');
+}
