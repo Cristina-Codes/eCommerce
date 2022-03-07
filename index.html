@@ -15,68 +15,141 @@
 
 	<nav class="navBar">
     <div class="wrapper">
-        <input type="checkbox" id="openSidebarMenu">
-        <label for="openSidebarMenu">
-            <img src="./assets/menu-button.svg" alt="Menu button" class="menuIcon">
-        </label>
-				<!-- .openSidebarMenu label END -->
+			<input type="checkbox" id="openSidebarMenu">
+			<label for="openSidebarMenu">
+				<img src="./assets/menu-button.svg" alt="Menu button" class="menuIcon">
+			</label>
+			<!-- .openSidebarMenu label END -->
 
-				<div class="slideOutNav">
-					<div class="buttonContainer">
-							<button>x</button>
-					</div>
-					<nav>
-							<ul class="mainMenu">
-									<li><a href="#">Shop</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">News</a></li>
-									<li><a href="#">Contact</a></li>
-							</ul>
-							<hr>
-							<ul class="legal">
-									<li><a href="#">Licenses</a></li>
-									<li><a href="#">Style Guide</a></li>
-									<li><a href="#">Changelog</a></li>
-							</ul>
-					</nav>
+			<div class="slideOutNav">
+				<div class="buttonContainer">
+					<button>x</button>
 				</div>
+				<nav>
+					<ul class="mainMenu">
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<hr>
+					<ul class="legal">
+						<li><a href="#">Licenses</a></li>
+						<li><a href="#">Style Guide</a></li>
+						<li><a href="#">Changelog</a></li>
+					</ul>
+				</nav>
+			</div>
 
-        <a href="#" class="logo">
-            <h1>Toybox</h1>
-        </a>
-        <div class="searchCart">
-            <button class="menuIcon">
-                <img src="./assets/search.svg" alt="search icon" class="searchIcon">
-            </button>
+			<a href="#" class="logo">
+				<h1>Toybox</h1>
+			</a>
+			<div class="searchCart">
+				<button class="menuIcon">
+					<img src="./assets/search.svg" alt="search icon" class="searchIcon">
+				</button>
 	<!-- It's a button to pop out a search bar first, then the search happens. -->
 	<!-- It would be an anchor if this element took us to a search page -->
 	<!-- this is where conversation with the designer is important -->
             <!-- you see an anchor below because this will take us to the cart page...rather than a button that would open a dropdown. currently, target and amazon use a link  -->
-            <a href="#" class="bag">
-                <img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
-            </a>
-            <div class="counter">
-                <p class="smallCopy">0</p>
-            </div> <!-- .counter END -->                
-        </div> <!-- .searchCart END -->
+				<a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
+				</a>
+				<div class="counter">
+					<p class="smallCopy">0</p>
+        </div> <!-- .counter END -->                
+      </div> <!-- .searchCart END -->
     </div> <!-- .wrapper END -->
 	</nav> <!-- .navBar END -->
 
 	<header>
     <div class="headerImgContainer wrapper">
-        <img src="./assets/header-image.jpg" alt="A child in overalls playing with colourful wooden blocks on the floor">
+      <img src="./assets/header-image.jpg" alt="A child in overalls playing with colourful wooden blocks on the floor">
     </div>
     <div class="headerContent wrapper">
-        <div class="contentContainer">
-            <h5>Handcrafted for kids</h5>
-            <h3>Go on, let them play with wooden blocks.</h3>
-            <p>Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis iaculis pulvinar tellus.</p>
-            <button>Shop All</button>
-						<!-- I would think this would be a link/anchor to a new page, but here it's not. -->
-        </div>
+			<div class="contentContainer">
+				<h5>Handcrafted for kids</h5>
+				<h3>Go on, let them play with wooden blocks.</h3>
+				<p>Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis iaculis pulvinar tellus.</p>
+				<button>Shop All</button>
+				<!-- I would think this would be a link/anchor to a new page, but here it's not. -->
+			</div>
     </div>
 	</header>
 
+
+	<footer id="footer">
+    <div class="wrapper">
+			<div class="footerFlexContainer">
+				<a href="" class="logo">
+					<h4>Toybox</h4>
+				</a>
+
+				<div class="newsletter">
+					<h5>Stay in the loop</h5>
+					<p class="newsletterCopy">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+					<form action="">
+						<label for="email" class="sr-only">Enter your email</label>
+						<input type="email" id="email">
+						<button class="secondary">Go</button>
+					</form>
+					<p class="smallCopy">We’ll never share your email address with third parties.</p>
+				</div> <!-- .newsletter END -->
+
+				<div class="footerNav">
+					<nav>
+						<ul class="footerShop">
+							<li><h5>Shop</h5></li>
+							<li><a href="">Safari</a></li>
+							<li><a href="">Ocean</a></li>
+							<li><a href="">Dinos</a></li>
+							<li><a href="">Sale</a></li>
+						</ul>
+						<ul class="footerAbout">
+							<li><h5>About</h5></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">FAQ</a></li>
+							<li><a href="">News</a></li>
+							<li><a href="">Legal</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+						<ul class="footerTemp">
+							<li><h5>Template</h5></li>
+							<li><a href="">Style Guide</a></li>
+							<li><a href="">Licenses</a></li>
+							<li><a href="">Changelog</a></li>
+						</ul>
+					</nav>
+				</div> <!-- .footerNav END -->
+			</div> <!-- .footerFlexContainer END-->
+
+			<div class="social">
+				<div class="socialIcons">
+					<a href="">
+						<i class="fab fa-twitter" aria-hidden="true"></i>
+						<span class="sr-only">Link to Twitter</span>
+					</a>
+					<a href="">
+						<i class="fab fa-pinterest" aria-hidden="true"></i>
+						<span class="sr-only">Link to Pinterest</span>
+					</a>
+					<a href="">
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+						<span class="sr-only">Link to Instagram</span>
+					</a>
+					<a href="">
+						<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						<span class="sr-only">Link to Facebook</span>
+					</a>
+				</div> <!-- .socialIcons END -->
+
+				<div class="copyright">
+					<p class="smallCopy">© Copyright Company</p>
+				</div> <!-- .copyright END -->
+
+			</div> <!-- .social END -->
+    </div> <!-- .wrapper END-->
+	</footer>
 </body>
 </html>
