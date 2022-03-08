@@ -1,0 +1,78 @@
+// ALERT
+// in Sass it's important to nest in media queries the same way as you did in the desktop styling
+// you can see the nesting by inspecting the element and looking at the styling boxes that show where the styling is coming from
+
+//these are major breakpoints for the majority of resizing
+@media (max-width: 1000px) {
+  footer {
+    .footerFlexContainer {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+      .logo {
+        margin: 0 0 30px 0;
+      }
+    }
+    .newsletter {
+      width: 50%;
+      margin: 0 0 60px 0;
+    }
+    .footerNav {
+      width: 80%;
+      nav { //here's an example of the nesting-the-same mentioned at the top. Why include the nav level if nothing is applied there? Because the nesting needs to be the same
+        ul {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+//so this would be a minor breakpoint as of now with just one adjustment
+@media (max-width: 800px) {
+  footer {
+    .newsletter{
+      width: 70%;
+    }
+  } 
+}
+
+@media (max-width: 500px) {
+  .announcements {
+    display: none;
+  }
+
+  .slideOutNav {
+    .mainMenu {
+      a {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  footer {
+    .footerFlexContainer {
+      margin-bottom: 60px; 
+    }
+    .footerNav {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        ul {
+          margin-bottom: 24px;
+          width: 100%;
+        }
+      }
+    } 
+    .social {
+      flex-direction: column;
+      align-items: center;
+    }
+    .socialIcons {
+      margin-bottom: 30px;
+    }
+  }
+}
+//minor breakpoints are for a couple fixes at a different pixel point
