@@ -529,6 +529,28 @@ header .headerContent .contentContainer {
   margin: 0 auto;
 }
 
+.gallery {
+  background: #f8fbf3;
+  padding: 90px 0;
+  margin: 0;
+}
+.gallery h2 {
+  max-width: 500px;
+}
+
+.galleryItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.galleryItems .item {
+  width: 15%;
+}
+.galleryItems .item img {
+  width: 100%;
+  display: block;
+}
+
 footer {
   background: #084b6d;
   color: #fff;
