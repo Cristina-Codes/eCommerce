@@ -23,7 +23,33 @@
       }
     }
   }
-// Footer
+
+  .categoryGallery {
+    .items {
+      padding: 25px;
+    }
+  }
+
+  .galleryItems {
+    justify-content: center;
+    .item {
+      width: calc(25% - 20px);
+      margin: 10px;
+    }
+  }
+
+  // Contact Page - 1000
+  .mapFormContainer {
+    .map{
+      width: 45%;
+    }
+  }
+  .contactForm{
+    width: calc(55% - 50px);
+    margin-left: 50px;
+  }
+
+  // Footer - 1000
   footer {
     .footerFlexContainer {
       flex-direction: column;
@@ -48,8 +74,62 @@
   }
 }
 
-//so this would be a minor breakpoint as of now with just one adjustment
+
 @media (max-width: 800px) {
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  header {
+    flex-direction:column;
+    .headerImgContainer {
+      width: 100%;
+      img {
+        max-height: 350px;
+        width: 100%;
+      }
+    }
+    .headerContent {
+      padding: 40px 0;
+      width: 100%;
+    }
+  }
+
+  .product {
+    .productImgContainer {
+      width: 50%;
+    }
+  }
+      
+
+  .categoryGallery {
+    justify-content: space-evenly;
+    .items {
+      padding: 15px;
+      margin: 20px 10px;
+    }
+  }
+
+  .galleryItems {
+    .item {
+      width: calc(33.33% - 20px);
+    }
+  }
+  // Contact Page - 800
+  .mapFormContainer{
+    flex-direction: column;
+    align-items: center;
+    .map{
+      margin-bottom: 50px;
+      width: 85%;
+    }
+  }
+  .contactForm{
+    width: 85%;
+    margin-left: 0;
+  }
+  // Footer - 800
   footer {
     .newsletter{
       width: 70%;
@@ -58,11 +138,36 @@
 }
 
 @media (max-width: 500px) {
-  .announcements {
-    display: none;
+  h3 {
+    font-size: 2.2rem;
   }
 
-  .slideOutNav {
+  button {
+    padding: 10px 20px;
+  }
+
+  .announcements {
+    display: none;
+  } 
+
+  .navBar {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    input[type=checkbox] {
+      align-self: flex-start;
+    }
+    label {
+      align-self: flex-start;
+    }
+    .logo {
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  .slideOutNav{
+    width: 100%;
     .mainMenu {
       a {
         font-weight: bold;
@@ -71,6 +176,41 @@
     }
   }
 
+  .titleBar {
+    button {
+      align-self: center;
+    }
+  }
+
+
+  .product {
+    .productImgContainer {
+      width: 100%;
+    }
+  }
+
+  .categoryGallery {
+    .items {
+      width: 100%;
+      padding: 30px;
+      margin: 40px 0 0 0;
+    }
+  }
+
+  .galleryItems {
+    .item {
+      width: 100%;
+    }
+  }
+
+  // Contact Page - 500
+  .mapFormContainer {
+    .map {
+      width: 100%;
+    }
+  }
+  
+  // Footer - 500
   footer {
     .footerFlexContainer {
       margin-bottom: 60px; 
