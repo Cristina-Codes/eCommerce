@@ -529,27 +529,109 @@ header .headerContent .contentContainer {
   margin: 0 auto;
 }
 
-.titleBar {
-  display: flex;
-  justify-content: space-between;
+.contactHeader {
+  background-color: #fff5f5;
+  padding-top: 120px;
 }
-
-.popular {
-  display: flex;
-  flex-direction: column;
-}
-.popular .productImgContainer {
-  width: 33.3333333333%;
-}
-.popular .productImgContainer a {
+.contactHeader .contactContent {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
 }
-.popular .productImgContainer a img {
-  max-width: 100%;
-  display: block;
-  border-radius: 20px;
+
+.contactHeader::after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url(../../../assets/wave.svg);
+  background-color: #fff5f5;
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+}
+
+main section {
+  margin-bottom: 90px;
+}
+
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product .productImgContainer {
+  width: 33.3333333333%;
+  text-align: center;
+}
+.product .productImgContainer img {
+  border-radius: 5%;
+  margin: 24px;
+  width: calc(100% - 48px);
+}
+
+.play {
+  background: url("../../../assets/background-image.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.play .playContainer {
+  border: 24px solid #f4fcff;
+  background: #fff;
+  padding: 70px 45px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryGallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
+.categoryGallery .items {
+  padding: 45px;
+  margin: 50px 25px 25px;
+  border-radius: 10%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease;
+}
+.categoryGallery .items img {
+  width: 100%;
+  border-radius: 10%;
+  margin: 0 auto 20px auto;
+}
+.categoryGallery .items:hover {
+  transform: scale(0.95);
+}
+.categoryGallery .items:focus {
+  transform: scale(0.95);
+}
+.categoryGallery .itemOne {
+  background-color: #ffd698;
+}
+.categoryGallery .itemTwo {
+  background-color: #f4fcff;
+}
+.categoryGallery .itemThree {
+  background-color: #f8fbf3;
+}
+.categoryGallery .itemFour {
+  background-color: #fff5f5;
 }
 
 .gallery {
@@ -572,6 +654,93 @@ header .headerContent .contentContainer {
 .galleryItems .item img {
   width: 100%;
   display: block;
+}
+
+.mapFormContainer {
+  display: flex;
+}
+.mapFormContainer .map {
+  width: 50%;
+}
+.mapFormContainer .map iframe {
+  width: 100%;
+}
+
+.contactForm {
+  width: calc(50% - 70px);
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0 0 10px 5px;
+  border: none;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Jakarta Sans";
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input::placeholder, textarea::placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input:focus, textarea:focus {
+  border-bottom: 1px solid #084b6d;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+textarea {
+  min-height: 130px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #fff;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: 95% center;
+  background-size: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+option {
+  font-family: "Jakarta Sans", sans-serif;
 }
 
 footer {
