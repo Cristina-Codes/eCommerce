@@ -529,6 +529,29 @@ header .headerContent .contentContainer {
   margin: 0 auto;
 }
 
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+}
+.popular .productImgContainer {
+  width: 33.3333333333%;
+}
+.popular .productImgContainer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popular .productImgContainer a img {
+  max-width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
 .gallery {
   background: #f8fbf3;
   padding: 90px 0;
@@ -624,6 +647,27 @@ footer .social a:hover, footer .social a:focus {
 }
 
 @media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+  header .headerImgContainer {
+    width: 100%;
+  }
+  header .headerImgContainer img {
+    max-height: 450px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    vertical-align: bottom;
+  }
+  header .headerContent {
+    padding: 40px 0;
+    width: 100%;
+  }
+  header .headerContent .contentContainer {
+    width: 50%;
+  }
+
   footer .footerFlexContainer {
     flex-direction: column;
     align-items: center;
