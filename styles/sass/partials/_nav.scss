@@ -76,7 +76,7 @@
       display: flex;
       flex-direction: column;
       position: fixed;
-      top: 0;
+      bottom: 0;
       left: -506px; //the final size of the slide out nav at the end
       z-index: 20;
       transition: 0.75s;
