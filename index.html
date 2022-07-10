@@ -11,6 +11,13 @@
 <!-- stylesheet -->
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
+
+<!-- goals:
+add the remaining page
+add regex to the contact form
+check tabbing/accessibility
+-->
+
 <body>
   <div class="announcements">
     <div class="wrapper">
@@ -32,10 +39,10 @@
 				</div>
 				<nav>
 					<ul class="mainMenu">
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="#categories">Shop</a></li>
+						<li><a href="#play">About</a></li>
 						<li><a href="#">FAQ</a></li>
-						<li><a href="#">News</a></li>
+						<li><a href="#gallery">News</a></li>
 						<li><a href="./contact.html">Contact</a></li>
 					</ul>
 					<hr>
@@ -54,10 +61,6 @@
 				<button class="menuIcon">
 					<img src="./assets/search.svg" alt="search icon" class="searchIcon">
 				</button>
-	<!-- It's a button to pop out a search bar first, then the search happens. -->
-	<!-- It would be an anchor if this element took us to a search page -->
-	<!-- this is where conversation with the designer is important -->
-            <!-- you see an anchor below because this will take us to the cart page...rather than a button that would open a dropdown. currently, target and amazon use a link  -->
 				<a href="#" class="bag">
 					<img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
 				</a>
@@ -146,7 +149,7 @@
 						<h4>Ocean</h4>
 						<p>Adorable Aquatic Characters</p>
 					</a>
-					<a href="" class="items itemThree">
+					<a href="" class="items itemThree" id="dinos">
 						<img src="./assets/dinos.jpg" alt="Hand-carved dinosaur toys for kids">
 						<h4>Dinos</h4>
 						<p>Meet These Prehistoric Pals</p>
@@ -211,18 +214,18 @@
 					<nav>
 						<ul class="footerShop">
 							<li><h5>Shop</h5></li>
-							<li><a href="">Safari</a></li>
-							<li><a href="">Ocean</a></li>
-							<li><a href="">Dinos</a></li>
-							<li><a href="">Sale</a></li>
+							<li><a href="#categories">Safari</a></li>
+							<li><a href="#categories">Ocean</a></li>
+							<li><a href="#categories">Dinos</a></li>
+							<li><a href="#categories">Sale</a></li>
 						</ul>
 						<ul class="footerAbout">
 							<li><h5>About</h5></li>
-							<li><a href="">About Us</a></li>
+							<li><a href="#play">About Us</a></li>
 							<li><a href="">FAQ</a></li>
-							<li><a href="">News</a></li>
+							<li><a href="#gallery">News</a></li>
 							<li><a href="">Legal</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="./contact.html">Contact</a></li>
 						</ul>
 						<ul class="footerTemp">
 							<li><h5>Template</h5></li>

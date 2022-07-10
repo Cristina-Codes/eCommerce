@@ -224,9 +224,7 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* end snippet */
+} /* end snippet */
 /* import Jakarta Sans font in normal/regular */
 @font-face {
   font-family: "Jakarta Sans";
@@ -245,8 +243,7 @@ html {
   src: url("../../fonts/youngserif/YoungSerif-Regular.otf");
 }
 html {
-  font-size: 125%;
-  /* 20px */
+  font-size: 125%; /* 20px */
 }
 
 body {
@@ -440,6 +437,21 @@ button.menuIcon:focus {
 .navBar .searchCart .bagIcon {
   margin-right: 15px;
 }
+.navBar .searchCart .searchIcon,
+.navBar .searchCart .counter,
+.navBar .searchCart .bag {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.navBar .searchCart .searchIcon:hover, .navBar .searchCart .searchIcon:focus,
+.navBar .searchCart .counter:hover,
+.navBar .searchCart .counter:focus,
+.navBar .searchCart .bag:hover,
+.navBar .searchCart .bag:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
 .navBar a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,6 +475,15 @@ button.menuIcon:focus {
 .navBar input[type=checkbox]:checked ~ .slideOutNav {
   left: 0;
 }
+.navBar input[type=checkbox]:checked {
+  position: fixed;
+  left: 434px;
+  top: 33px;
+  height: 30px;
+  width: 25px;
+  z-index: 100;
+  cursor: pointer;
+}
 .navBar input[type=checkbox]:focus + label {
   border: 1px dotted #084b6d;
 }
@@ -474,6 +495,7 @@ button.menuIcon:focus {
   border-right: 1px solid #f4fcff;
   width: 100%;
   max-width: 506px;
+  height: 100vh;
   background-color: #084b6d;
   color: #fff;
   display: -webkit-box;
@@ -504,7 +526,7 @@ button.menuIcon:focus {
   font-family: "Jakarta Sans";
   color: #fff;
   background-color: transparent;
-  padding: 10px 0 10px 20px;
+  padding: 0;
 }
 .navBar .slideOutNav hr {
   width: 24px;
@@ -529,7 +551,7 @@ button.menuIcon:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 .navBar .slideOutNav .legal a:hover, .navBar .slideOutNav .legal a:focus {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 header {
@@ -945,11 +967,9 @@ footer .social a:hover, footer .social a:focus {
   header .headerContent .contentContainer {
     width: 50%;
   }
-
   .categoryGallery .items {
     padding: 25px;
   }
-
   .galleryItems {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -959,16 +979,13 @@ footer .social a:hover, footer .social a:focus {
     width: calc(25% - 20px);
     margin: 10px;
   }
-
   .mapFormContainer .map {
     width: 45%;
   }
-
   .contactForm {
     width: calc(55% - 50px);
     margin-left: 50px;
   }
-
   footer .footerFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -998,7 +1015,6 @@ footer .social a:hover, footer .social a:focus {
     font-size: 1.5rem;
     line-height: 1.7rem;
   }
-
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1016,11 +1032,9 @@ footer .social a:hover, footer .social a:focus {
     padding: 40px 0;
     width: 100%;
   }
-
   .product .productImgContainer {
     width: 50%;
   }
-
   .categoryGallery {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -1030,11 +1044,9 @@ footer .social a:hover, footer .social a:focus {
     padding: 15px;
     margin: 20px 10px;
   }
-
   .galleryItems .item {
     width: calc(33.33% - 20px);
   }
-
   .mapFormContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1048,29 +1060,24 @@ footer .social a:hover, footer .social a:focus {
     margin-bottom: 50px;
     width: 85%;
   }
-
   .contactForm {
     width: 85%;
     margin-left: 0;
   }
-
   footer .newsletter {
     width: 70%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   h3 {
     font-size: 2.2rem;
   }
-
   button {
     padding: 10px 20px;
   }
-
   .announcements {
     display: none;
   }
-
   .navBar .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1080,9 +1087,9 @@ footer .social a:hover, footer .social a:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-  .navBar input[type=checkbox] {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+  .navBar input[type=checkbox]:checked {
+    left: 45px;
+    top: 35px;
   }
   .navBar label {
     -ms-flex-item-align: start;
@@ -1091,38 +1098,36 @@ footer .social a:hover, footer .social a:focus {
   .navBar .logo {
     margin: 10px 0 20px 0;
   }
-
-  .slideOutNav {
+  .navBar .slideOutNav {
     width: 100%;
   }
-  .slideOutNav .mainMenu a {
+  .navBar .slideOutNav .buttonContainer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .navBar .slideOutNav .mainMenu a {
     font-weight: bold;
     font-size: 1.2rem;
   }
-
   .titleBar button {
     -ms-flex-item-align: center;
         align-self: center;
   }
-
   .product .productImgContainer {
     width: 100%;
   }
-
   .categoryGallery .items {
     width: 100%;
     padding: 30px;
     margin: 40px 0 0 0;
   }
-
   .galleryItems .item {
     width: 100%;
   }
-
   .mapFormContainer .map {
     width: 100%;
   }
-
   footer .footerFlexContainer {
     margin-bottom: 60px;
   }
